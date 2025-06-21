@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPA das Cortinas | Lavagem Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-petroleo: #336699;
+      --azul-serenity: #B3CCE6;
+      --cinza-gelo: #F2F2F2;
+      --branco: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--branco); color: #333; line-height: 1.6; }
+    header, section, footer { padding: 4rem 1.5rem; }
+    .container { max-width: 1140px; margin: auto; padding: 0 1rem; }
+    h1, h2, h3 { font-family: 'Poppins', sans-serif; color: var(--azul-petroleo); margin-bottom: 1rem; text-align: center; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    .hero { background-color: var(--cinza-gelo); text-align: center; padding: 5rem 1rem; }
+    .hero img { width: 140px; margin-bottom: 1.5rem; }
+    .cta {
+      background: var(--azul-petroleo); color: #fff; padding: 1rem 2rem; border: none;
+      border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: 2rem;
+      display: inline-block; transition: background 0.3s;
+    }
+    .cta:hover { background: #2b567c; }
+    .grid { display: grid; gap: 2rem; margin-top: 3rem; }
+    @media(min-width: 768px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .card {
+      border-radius: 12px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #fff; text-align: center;
+    }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; color: var(--azul-serenity); }
+    ul { list-style: none; padding-left: 0; margin-top: 2rem; display: grid; gap: 1rem; }
+    ul li::before { content: '✔'; color: var(--azul-petroleo); margin-right: .5rem; }
+    .contact { text-align: center; }
+    .contact a.btn {
+      background: var(--azul-serenity); color: #fff; padding: .9rem 2rem; border-radius: 30px;
+      font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem;
+    }
+    .contact a.btn:hover { background: var(--azul-petroleo); }
+    footer {
+      background: var(--azul-petroleo); color: white; text-align: center;
+      font-size: 0.875rem; padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="logo-spa-das-cortinas.png" alt="Logo Spa das Cortinas" />
+      <h1>Lavagem Premium de Cortinas em Sinop-MT</h1>
+      <p>Retiramos, higienizamos e instalamos de volta — sem dor de cabeça.</p>
+      <a href="https://wa.me/5566996213044" class="cta">Falar no WhatsApp</a>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <h2>Por que escolher o SPA das Cortinas?</h2>
+      <div class="grid">
+        <div class="card"><div class="card-icon">🧼</div><h3>Lavagem Profissional</h3><p>Produtos e cuidados para cada tipo de tecido.</p></div>
+        <div class="card"><div class="card-icon">🛡️</div><h3>Limpeza Técnica</h3><p>Anti-mofo, anti-ácaro e eliminação de odores.</p></div>
+        <div class="card"><div class="card-icon">🛠️</div><h3>Instalação Inclusa</h3><p>Retiramos e colocamos de volta com agilidade.</p></div>
+      </div>
+    </div>
+  </section>
+  <section style="background: var(--cinza-gelo);">
+    <div class="container">
+      <h2>Quando é hora de lavar sua cortina?</h2>
+      <ul>
+        <li>Limpeza preventiva (a cada 6 a 12 meses)</li>
+        <li>Após mudanças ou reformas</li>
+        <li>Para remover mofo, odores ou manchas</li>
+        <li>Prevenir alergias e rinite</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="container contact">
+      <h2>Solicite seu orçamento agora</h2>
+      <p><strong>Seg a Sex:</strong> 08h às 12h | 13h às 18h<br><strong>Sábado:</strong> 08h às 12h</p>
+      <a href="https://wa.me/5566996213044" class="btn">Chamar no WhatsApp</a>
+      <p style="margin-top: 1rem;">Ou ligue: <strong>(66) 99621-3044</strong></p>
+    </div>
+  </section>
+  <footer>
+    © <span id="year"></span> SPA das Cortinas • Sinop-MT • @spadascortinas.sinop
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
